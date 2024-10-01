@@ -1,0 +1,131 @@
+•⁠  ⁠{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    background-color: rgb(132, 28, 44);
+    color: white;
+    justify-content: space-evenly;
+    padding: 20px 0;
+    flex-wrap: wrap; }
+
+.H_item {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.H_item a {
+    color: white;
+}
+
+.H_item a:hover {
+    background-color: rgb(3, 4, 5);
+    width: 70px;
+    border-radius: 9px;
+    padding: 6px 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #eaeaea;
+    padding: 20px;
+    text-align: center;
+}
+
+.hero {
+    background-color: #ccc;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(https://www.bloomr.com/cdn/shop/collections/22821-D11_1st.jpg?v=1710138282);
+    background-size: cover; 
+}
+
+.hero h1 {
+    font-size: 3rem;
+    color: #333;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 40px;
+}
+
+.grid-item {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.grid-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.grid-item h3 {
+    margin: 15px 0;
+    font-size: 1.2rem;
+}
+
+.grid-item p {
+    color: #888;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.grid img:hover {
+        transform: scale(1.05);
+    
+}
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr); 
+        padding: 20px;
+    }
+
+    .header {
+        flex-direction: column; 
+    }
+
+    .hero h1 {
+        font-size: 2rem; 
+    }
+
+    .grid-item {
+        padding: 10px; }
+}
+
+@media (max-width: 480px) {
+    .grid {
+        grid-template-columns: 1fr; 
+    }
+
+    .hero h1 {
+        font-size: 1.5rem; 
+    }
+}

@@ -1,0 +1,184 @@
+•⁠  ⁠{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgba(251, 251, 251, 255);
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    background-color: rgb(132, 28, 44);
+    color: white;
+    justify-content: space-evenly;
+    padding: 20px 0px;
+    flex-wrap: wrap;
+
+}
+
+.H_item {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.H_item a:hover {
+    background-color: rgb(5, 7, 8);
+    border-radius: 9px;
+    padding: 6px 0;
+}
+
+.container {
+    width: 100%;
+    
+}
+.quote{
+    width: 100%;
+    justify-content: center;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.faq {
+    padding: 40px 0;
+    justify-content: center;
+}
+
+.faq-item {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; 
+    width: 1000px;
+}
+
+.faq-item img {
+    width: 100%;
+    height: auto;
+    margin-left: 24%;
+    justify-content: center;
+}
+
+.faq-text {
+    width: 50%;
+    margin-left: 24%;
+}
+
+.faq-questions p {
+    margin-bottom: 15px;
+    margin-left: 59%;
+
+}
+.faq-questions h2 {
+    margin-bottom:-6px;
+    margin-left: 59%;
+    margin-top:-5%;
+
+    
+}
+
+.quote {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.quote form {
+    margin-bottom: 30px;
+}
+
+.quote form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    background-color: #444;
+    color: #fff;
+}
+
+.quote form button {
+    padding: 10px 20px;
+    background-color: #ccc;
+    border: none;
+    color: #333;
+    cursor: pointer;
+}
+.all{
+    display: flex;
+    text-align: center;
+}
+
+
+@media (max-width: 768px) {
+    .faq-item {
+        flex-direction: column; 
+        text-align: center; 
+    }
+
+.header {
+    display: flex;
+    background-color: rgb(132, 28, 44);
+    color: white;
+    justify-content: space-evenly;
+    padding: 20px 0;
+    flex-wrap: wrap;
+
+
+}
+
+    .faq-item img {
+        width: 100%; 
+        margin: 0 0 20px 0; 
+    }
+
+    .faq-text {
+        width: 100%; 
+    }
+
+    h2 {
+        font-size: 1.5rem; }
+
+    p {
+        font-size: 0.9rem; 
+    }
+
+    .quote {
+        padding: 20px 0; 
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 1.2rem; 
+    }
+
+.header {
+    display: flex;
+    background-color: rgb(132, 28, 44);
+    color: white;
+    justify-content: space-evenly;
+    padding: 20px 0;
+    flex-wrap: wrap;
+    margin: top 20px; ;
+
+}
+
+    .quote form button {
+        padding: 8px 16px; 
+    }
+}

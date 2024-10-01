@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+}
+
+
+.header {
+    display: flex;
+    background-color: rgb(132, 28, 44);
+    color: white;
+    justify-content: space-evenly;
+    padding: 20px 0;
+}
+
+.H_item {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.H_item a {
+    color: white;
+}
+
+.H_item a:hover {
+    background-color: rgb(2, 3, 3);
+    width: 70px;
+    border-radius: 9px;
+    padding: 6px 0;
+}
+
+
+header {
+    position: relative;
+    height: 80vh;
+    background: url(https://chattanoogafurnitureshop.com/wp-content/uploads/2024/02/Ari-Sofa-by-Kincaid.jpg) no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 4rem;
+    letter-spacing: 3px;
+    color: #333;
+    margin-top: 109%;
+}
+
+header p {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    max-width: 600px;
+}
+
+
+.content {
+    padding: 80px 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    background-color: #fff;
+    margin-top: 7%;
+}
+
+.content h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.content p {
+    line-height: 1.6;
+    color: #666;
+}
+
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.product-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.product-item img:hover {
+    transform: scale(1.05);
+}
+
+.product-item p {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.product-item span {
+    font-size: 1.1em;
+    color: #888;
+}
+
+
+footer {
+    text-align: center;
+    padding: 40px;
+    background-color: #333;
+    color: white;
+}
+
+.text {
+    margin-left: 44%;
+}
+
+
+@media (max-width: 1200px) {
+    .content {
+        grid-template-columns: 1fr;
+        padding: 40px 20px;
+    }
+
+    .header {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    .H_item {
+        margin-bottom: 10px;
+    }
+
+    header h1 {
+        font-size: 3rem;
+        margin-top: 80%;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        height: 60vh;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    .content {
+        padding: 40px 20px;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .text {
+        margin-left: 10%;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .content h2 {
+        font-size: 1.5rem;
+    }
+
+    .content p {
+        font-size: 0.9rem;
+    }
+
+    .product-item {
+        padding: 10px;
+    }
+
+    .product-item img {
+        margin-bottom: 5px;
+    }
+
+    footer {
+        padding: 20px;
+    }
+}

@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+}
+
+
+.header {
+  display: flex;
+  color: white;
+  justify-content: space-evenly;
+  padding: 20px 0;
+  background-color: rgb(132, 28, 44);
+}
+
+.H_item {
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.H_item a {
+  color: white;
+}
+
+.H_item a:hover {
+  background-color: rgb(14, 14, 18);
+  width: 100px;
+  border-radius: 7px;
+  padding: 6px 0;
+}
+
+
+header {
+  position: relative;
+  height: 80vh;
+  background: url(./IMG_9098.jpg) no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 4rem;
+  letter-spacing: 3px;
+}
+
+header p {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  max-width: 600px;
+}
+
+
+.content {
+  padding: 80px 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  background-color: #fff;
+}
+
+.content h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.content p {
+  line-height: 1.6;
+  color: #666;
+}
+
+
+.form-section {
+  flex: 2;
+  padding-right: 40px;
+}
+
+.form-section h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.form-section {
+  margin-left: 3%;
+}
+
+form label {
+  display: block;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  margin-top: 20px;
+  padding: 15px 30px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #333;
+}
+
+.contact-section {
+  flex: 1;
+  text-align: right;
+}
+
+.contact-section h2 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  text-align: center;
+  margin-top: 2%;
+}
+
+.contact-section p {
+  margin-bottom: 20px;
+  color: #555;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding: 40px;
+  background-color: #333;
+  color: white;
+}
+
+
+.image-section {
+  height: 400px;
+  background: url(https://cdn.media.amplience.net/i/shadesoflight/XU_Cat2) no-repeat center center/cover;
+  border-radius: 10px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+
+@media (max-width: 1200px) {
+  .content {
+    grid-template-columns: 1fr;
+    padding: 40px 20px;
+  }
+
+  .header {
+    flex-direction: column;
+    padding: 10px 0;
+  }
+
+  .H_item {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 3rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  .form-section {
+    margin-left: 0;
+    padding-right: 0;
+  }
+
+  .form-section {
+    margin-bottom: 20px;
+  }
+
+  .contact-section {
+    text-align: left;
+  }
+
+  .image-section {
+    height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    height: 60vh;
+  }
+
+  header h1 {
+    font-size: 2.5rem;
+  }
+
+  .content h2 {
+    font-size: 1.5rem;
+  }
+
+  .content p {
+    font-size: 0.9rem;
+  }
+
+  form button {
+    padding: 10px 20px;
+  }
+}
